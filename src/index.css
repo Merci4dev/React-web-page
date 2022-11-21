@@ -1,0 +1,17 @@
+/* Aqui estan las variables funcionan a nivel root */
+:root{
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --gradient-text: linear-gradient(113deg, rgba(236,165,6,1) 0%, rgba(8,189,85,0.7420868005405288) 53%, rgba(255,0,193,1) 100%);
+    --gradient-bar: rgb(154, 36, 197);
+    --color-bg:#040c18;
+    --color-footer:#400437;
+    --color-log: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8a71;
+    --bg-btn: #FF4820;
+}
+
+
+
+/* background: rgb(236,165,6);
+background: ; */

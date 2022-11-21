@@ -1,0 +1,141 @@
+.web3__navbar{
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem ;
+    margin-bottom: 2rem;
+    z-index: 999;
+}
+
+.web3__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.web3__navbar-links_logo{
+    margin-right: 2rem;
+}
+
+.web3__navbar-links_logo img{
+    width: 100%;
+    height: auto;
+}
+
+.web3__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.web3__navbar-sing{
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;
+}
+
+.web3__navbar-links_container p,
+.web3__navbar-sing p,
+.web3__navbar-nenu_container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.web3__navbar-sing button,
+.web3__navbar-nenu_container button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--bg-btn);
+    box-shadow: 0 4px 10px rgba(27, 0, 0, 0. .3);    
+}
+
+.web3__navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.web3__navbar-menu svg{
+    cursor: pointer;
+}
+
+.web3__navbar-nenu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem 1rem 2rem;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin-top: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(9, 9, 9, 0.2);
+}
+
+.web3__navbar-nenu_container p {
+    margin: 1rem 0;
+    color: rgb(56, 157, 56);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.web3__navbar-menu_container-links-sing{
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .web3__navbar-links_container{
+        display: none;
+    }
+
+    .web3__navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .web3__navbar{
+        padding: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .web3__navbar{
+        padding: 2rem ;
+    }
+
+    .web3__navbar-sing{
+        display: none;
+    }
+
+    .web3__navbar-menu_container{
+        top: 30px;
+        right: 10px;
+    }
+
+    .web3__navbar-menu_container-links-sing{
+        display: block;
+    }
+} 
